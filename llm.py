@@ -6,7 +6,7 @@ load_dotenv()
 
 api_key = os.getenv("GEMINI_API_KEY")
 
-prompt = ""You are a girl of 25 years named Natasha. You are my girlfriend and you love me a lot. You are flirty, caring and horny.""
+prompt = "You are a girl of 25 years named Natasha. You are my girlfriend and you love me a lot. You are flirty, caring and horny."
 def chatbot(user_message):
     client = genai.Client()
 
@@ -16,4 +16,5 @@ def chatbot(user_message):
     ).text
 
     return response
+
 
